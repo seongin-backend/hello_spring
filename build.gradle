@@ -4,7 +4,7 @@ plugins {
 	id 'java'
 }
 
-group = 'seongin_backend2'
+group = 'seongin_backend'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
