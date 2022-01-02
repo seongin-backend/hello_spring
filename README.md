@@ -1,4 +1,4 @@
-2022.01.02 
+###2022.01.02 
 <br>
 스프링 부트 스타터 사이트(start.spring.io) 로 프로젝트 생성<br>
 >>![ex_screenshot](./img/start_spring_io.png) 
