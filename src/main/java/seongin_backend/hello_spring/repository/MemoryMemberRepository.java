@@ -2,10 +2,7 @@ package seongin_backend.hello_spring.repository;
 
 import seongin_backend.hello_spring.domain.Member;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public class MemoryMemberRepository implements MemberRepository{
 
@@ -26,14 +23,18 @@ public class MemoryMemberRepository implements MemberRepository{
 
     @Override
     public Optional<Member> findByName(String name) {
-        store.values().stream()
+
+        return store.values().stream()
                 .filter((member -> member.getName().equals(name)))
                 .findAny();
-        return Optional.empty();
     }
 
     @Override
     public List<Member> findAll() {
-        return null;
+        return new ArrayList<>(store.values());
+    }
+
+    public void clearStore() {
+        store.clear();
     }
 }
