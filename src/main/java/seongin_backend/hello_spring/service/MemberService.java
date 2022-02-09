@@ -1,11 +1,13 @@
 package seongin_backend.hello_spring.service;
 
+import org.springframework.stereotype.Service;
 import seongin_backend.hello_spring.domain.Member;
 import seongin_backend.hello_spring.repository.MemberRepository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
