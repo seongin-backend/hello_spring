@@ -1,5 +1,6 @@
 package seongin_backend.hello_spring.repository;
 
+import org.springframework.stereotype.Repository;
 import seongin_backend.hello_spring.domain.Member;
 
 import java.util.List;

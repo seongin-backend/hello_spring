@@ -1,5 +1,6 @@
 package seongin_backend.hello_spring.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import seongin_backend.hello_spring.domain.Member;
 import seongin_backend.hello_spring.repository.MemberRepository;
@@ -11,6 +12,7 @@ import java.util.Optional;
 public class MemberService {
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
