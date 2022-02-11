@@ -10,7 +10,7 @@ public class MemberController {
     private final MemberService memberService;
 
     @Autowired
-    public MemberController(MemberService memberService) {
+    public MemberController(MemberService memberService) { //Autowired Spring 컨테이너끼리 잇는 역할
         this.memberService = memberService;
     }
 }
