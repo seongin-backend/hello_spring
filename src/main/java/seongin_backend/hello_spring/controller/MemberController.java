@@ -2,6 +2,7 @@ package seongin_backend.hello_spring.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import seongin_backend.hello_spring.service.MemberService;
 
 @Controller
@@ -13,5 +14,11 @@ public class MemberController {
     public MemberController(MemberService memberService) { //Autowired Spring 컨테이너끼리 잇는 역할
         this.memberService = memberService;
     }
+
+    @GetMapping("/members/new")
+    public String createForm() {
+        return "members/CreateMemberform";
+    }
+
 }
 
