@@ -41,7 +41,7 @@ class MemberServiceIntegrationTest {
         member1.setName("성인");
 
         Member member2 = new Member();
-        member2.setName("성인1");
+        member2.setName("성인");
 
         //when
         memberService.join(member1);
