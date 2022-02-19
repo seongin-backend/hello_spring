@@ -1,5 +1,7 @@
 package seongin_backend.hello_spring.repository;
 import hello.hellospring.domain.Member;
+import seongin_backend.hello_spring.domain.Member;
+
 import javax.persistence.EntityManager;
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +14,12 @@ public class JpaMemberRepository implements MemberRepository {
         em.persist(member);
         return member;
     }
+
+    @Override
+    public Member save(Member member) {
+        return null;
+    }
+
     public Optional<Member> findById(Long id) {
         Member member = em.find(Member.class, id);
         return Optional.ofNullable(member);
